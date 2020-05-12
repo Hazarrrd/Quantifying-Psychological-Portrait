@@ -1,0 +1,8 @@
+version: '3'
+services:
+  puma:
+    build: ./docker
+    volumes:
+        - ./:/root/    
+    ports:
+      - "8080:8080"
